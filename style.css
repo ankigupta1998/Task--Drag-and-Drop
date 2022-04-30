@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(62, 62, 62);
+}
+.container-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  height: 20vh;
+  align-items: center;
+}
+
+.form-container input[type="text"] {
+  padding: 10px;
+  border-radius: 10px;
+  width: 40vw;
+  border: 2px solid rgb(125, 125, 125);
+}
+.form-container input[type="text"]:hover {
+  outline: none;
+  box-shadow: 2px 2px 5px rgb(163, 163, 163);
+}
+.form-container input[type="text"]:focus {
+  outline: none;
+  box-shadow: 2px 2px 5px rgb(163, 163, 163);
+}
+
+.form-container input[type="submit"] {
+  padding: 8px;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+  border: 2px solid rgb(152, 152, 152);
+}
+.form-container input[type="submit"]:hover {
+  box-shadow: 2px 2px 5px rgb(163, 163, 163);
+}
+#container {
+  /* min-width: 600px; */
+  min-height: 400px;
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.list {
+  background-color: burlywood;
+  border-radius: 20px;
+  min-width: 200px;
+  min-height: 300px;
+  box-shadow: 2px 2px 5px rgb(36, 34, 34);
+  margin-bottom: 20px;
+}
+h1 {
+  font-size: large;
+  text-align: center;
+  font-weight: 600;
+  padding: 5px;
+  border: 1px solid rgb(123, 122, 120);
+  background-color: rgb(156, 152, 149);
+  border-radius: 0 20px;
+}
+
+.item {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 0 10px;
+  margin: 10px;
+  position: relative;
+  min-width: 100px;
+  box-shadow: 2px 2px 5px rgb(152, 152, 152);
+  box-sizing: border-box;
+}
+.todo {
+  width: 100px;
+  font-size: smaller;
+  font-weight: 600;
+}
+.item span {
+  cursor: move;
+  position: absolute;
+  right: 0;
+  font-size: x-large;
+}
+
+.dragging {
+  opacity: 0.3;
+}
+@media (max-width: 540px) {
+  #container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
