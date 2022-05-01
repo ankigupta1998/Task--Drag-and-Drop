@@ -3,12 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
-body,
-html {
+body{
   font-family: "Montserrat", sans-serif;
-  background-color: rgb(62, 62, 62);
+  background-image: url(./bac-img/img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
+
 .container-wrapper {
+ 
+
   display: flex;
   justify-content: center;
 }
@@ -25,29 +31,31 @@ html {
   border-radius: 10px;
   width: 40vw;
   border: 2px solid rgb(125, 125, 125);
+
 }
 .form-container input[type="text"]:hover {
   outline: none;
-  box-shadow: 2px 2px 5px rgb(163, 163, 163);
+  box-shadow: 2px 2px 5px rgb(66, 66, 66);
 }
 .form-container input[type="text"]:focus {
   outline: none;
-  box-shadow: 2px 2px 5px rgb(163, 163, 163);
+  box-shadow: 2px 2px 5px rgb(66, 66, 66);
 }
 
 .form-container input[type="submit"] {
   padding: 8px;
   border-radius: 10px;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   cursor: pointer;
-  border: 2px solid rgb(152, 152, 152);
+  /* border: 2px solid rgb(163, 163, 163); */
+  background-color: burlywood;
+  
 }
 .form-container input[type="submit"]:hover {
-  box-shadow: 2px 2px 5px rgb(163, 163, 163);
+  box-shadow: 2px 2px 5px rgb(66, 66, 66);
 }
 #container {
-  /* min-width: 600px; */
   min-height: 400px;
   width: 80vw;
   height: 80vh;
@@ -58,7 +66,7 @@ html {
 }
 
 .list {
-  background-color: burlywood;
+  background-color:rgba(222, 184, 135, 0.274);
   border-radius: 20px;
   min-width: 200px;
   min-height: 300px;
@@ -70,38 +78,44 @@ h1 {
   text-align: center;
   font-weight: 600;
   padding: 5px;
-  border: 1px solid rgb(123, 122, 120);
-  background-color: rgb(156, 152, 149);
+  border: 10px solid rgb(252, 252, 252);
+  background-color: burlywood;
   border-radius: 0 20px;
 }
 
 .item {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.637);
   display: flex;
   flex-wrap: wrap-reverse;
   border: 1px solid rgb(0, 0, 0);
   padding: 10px;
-  border-radius: 0 10px;
+  border-radius: 10px 10px;
   margin: 10px;
-  position: relative;
   min-width: 100px;
   box-shadow: 2px 2px 5px rgb(152, 152, 152);
   box-sizing: border-box;
+  position: relative;
 }
 .todo {
   width: 100px;
   font-size: smaller;
   font-weight: 600;
+  text-transform: capitalize;
 }
 .item span {
-  cursor: move;
+  cursor: pointer;
   position: absolute;
   right: 0;
-  font-size: x-large;
+ 
+
+  font-size: large;
 }
 
 .dragging {
   opacity: 0.3;
+}
+.completedTask{
+  text-decoration: line-through;
 }
 @media (max-width: 540px) {
   #container {

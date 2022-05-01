@@ -30,18 +30,48 @@
           <div class="dragContainer">
             <div class="item" draggable="true">
               <div class="todo">Happy Coding</div>
-              <span class="material-symbols-outlined">drag_handle</span>
+              <span onclick="clickHandler(event)" class="material-symbols-outlined">delete</span>
+            </div>
+          </div>
+          <div class="dragContainer">
+            <div class="item" draggable="true">
+              <div class="todo">Happy Coding 1</div>
+              <span onclick="clickHandler(event)" class="material-symbols-outlined">delete</span>
+            </div>
+          </div>
+          <div class="dragContainer">
+            <div class="item" draggable="true">
+              <div class="todo">Happy Coding 2</div>
+              <span onclick="clickHandler(event)" class="material-symbols-outlined">delete</span>
             </div>
           </div>
         </div>
         <div class="list">
           <h1>In Progress</h1>
+          <div class="dragContainer">
+            <div class="item" draggable="true">
+              <div class="todo">Work inprogress</div>
+              <span onclick="clickHandler(event)" class="material-symbols-outlined">delete</span>
+            </div>
+          </div>
         </div>
         <div class="list">
           <h1>Final Touch</h1>
+          <div class="dragContainer">
+            <div class="item" draggable="true">
+              <div class="todo">Finalizing stage</div>
+              <span onclick="clickHandler(event)" class="material-symbols-outlined"> delete </span>
+            </div>
+          </div>
         </div>
-        <div class="list">
-          <h1>Task Done</h1>
+        <div class="list completed">
+          <h1>Completed Tasks</h1>
+          <div class="dragContainer completedTask">
+            <div class="item" draggable="true">
+              <div class="todo">Completed Task</div>
+              <span onclick="clickHandler(event)" class="material-symbols-outlined"> delete </span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
